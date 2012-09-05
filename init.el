@@ -1,12 +1,7 @@
-;; User pack init file
-;;
-;; User this file to initiate the pack configuration.
-;; See README for more information.
-
-;; Load bindings config
 (live-load-config-file "bindings.el")
+(live-load-config-file "custom.el")
+(live-load-config-file "themes.el")
 
-;;(require 'package)
-;;(add-to-list 'package-archives
-;;             '("marmalade" . "http://marmalade-repo.org/packages/"))
-;;(package-initialize)
+;; Store backups in separate directory
+(setq backup-directory-alist `(("." . "~/.saves")))
+(setq backup-by-copying t)
