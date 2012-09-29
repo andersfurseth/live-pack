@@ -5,3 +5,7 @@
 ;; Store backups in separate directory
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq backup-by-copying t)
+
+;; Add ~/bin to path
+(setenv "PATH" (concat (getenv "PATH") ":/Users/anders/bin"))
+(setq exec-path (append exec-path '("/Users/anders/bin")))
