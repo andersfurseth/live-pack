@@ -11,4 +11,7 @@
 (setq exec-path (append exec-path '("/Users/anders/bin")))
 
 ;; Common lisp stuff
-;(setq inferior-lisp-program "/usr/local/bin/clisp")
+;;(setq inferior-lisp-program "/usr/local/bin/clisp")
+
+;; Typed text replaces
+(pending-delete-mode t)
