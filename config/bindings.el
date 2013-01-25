@@ -23,3 +23,5 @@
 (win-switch-set-keys '("D") 'enlarge-horizontally)
 
 (setq win-switch-idle-time 1.2)
+
+(global-set-key (kbd "C-c C-f") 'find-file-in-project)

@@ -13,5 +13,5 @@
 ;; Common lisp stuff
 ;;(setq inferior-lisp-program "/usr/local/bin/clisp")
 
-;; Typed text replaces
+;; Selected text is replaced by typed text
 (pending-delete-mode t)
