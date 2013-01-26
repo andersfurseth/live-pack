@@ -2,6 +2,12 @@
 (live-load-config-file "custom.el")
 (live-load-config-file "themes.el")
 
+;; Melpa
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(package-initialize)
+
 ;; Store backups in separate directory
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq backup-by-copying t)
