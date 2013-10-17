@@ -7,8 +7,10 @@
 
 ;; multiple-cursors
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(define-key clojure-mode-map (kbd "C->") 'mc/mark-next-like-this) ;; due to being set in emacs-live's clojure-conf.el
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+(global-set-key (kbd "M-'") 'mc/mark-all-like-this-dwim)
 
 ;; window-switching-mode
 (win-switch-set-keys '("w") 'up)
