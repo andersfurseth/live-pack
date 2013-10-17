@@ -27,3 +27,7 @@
 (setq win-switch-idle-time 1.2)
 
 (global-set-key (kbd "C-c C-f") 'find-file-in-project)
+
+
+(setq nrepl-popup-stacktraces nil)
+(setq nrepl-popup-stacktraces-in-repl t)
