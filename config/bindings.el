@@ -27,23 +27,7 @@
 (setq win-switch-idle-time 1.2)
 
 (global-set-key (kbd "C-c C-f") 'find-file-in-project)
-
+(define-key cider-mode-map (kbd "C-c C-f") 'find-file-in-project)
 
 (setq nrepl-popup-stacktraces nil)
 (setq nrepl-popup-stacktraces-in-repl t)
-
-
-(defun run-deftest-at-point ()
-  (interactive)
-  (save-excursion
-  (search-backward "deftest")
-  (search-forward "(")
-  (backward-char)
-  (let* ((beg (point))
-  (end (forward-list))
-  (contents (buffer-substring-no-properties beg end)))
-  (nrepl-find-and-clear-repl-buffer)
-  (nrepl-interactive-eval
-   (concat "(h/reset-state-fixture (fn [] " contents "))")))))
-
-(global-set-key (kbd "<f6>") 'run-deftest-at-point)
