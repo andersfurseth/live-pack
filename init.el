@@ -22,3 +22,7 @@
 
 ;; Selected text is replaced by typed text
 (pending-delete-mode t)
+
+;; TODO - upgrade to clj-refactor 0.12, where sort-comparator can be configured.
+;; clj-refactor
+;(setq cljr-sort-comparator 'cljr--semantic-comparator)

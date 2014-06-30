@@ -31,3 +31,6 @@
 
 (setq nrepl-popup-stacktraces nil)
 (setq nrepl-popup-stacktraces-in-repl t)
+
+;; cider collides with clj-refactor
+(define-key cider-mode-map (kbd "C-c C-m") nil)
