@@ -1,3 +1,6 @@
 [submodule "themes/emacs-color-theme-solarized.git"]
 	path = themes/emacs-color-theme-solarized.git
 	url = git://github.com/sellout/emacs-color-theme-solarized.git
+[submodule "lib/ido-vertical-mode"]
+	path = lib/ido-vertical-mode
+	url = https://github.com/gempesaw/ido-vertical-mode.el.git

@@ -1,6 +1,7 @@
 (live-load-config-file "bindings.el")
 (live-load-config-file "custom.el")
 (live-load-config-file "themes.el")
+(live-load-config-file "ido-vertical-mode-conf.el")
 
 ;; Melpa
 (require 'package)
